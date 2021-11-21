@@ -14,6 +14,18 @@
   margin: -0.2rem;
 }
 
+@media (max-width: 1300px) {
+  .home__heroLeft {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .home__heroLeft {
+    width: 70%;
+  }
+}
+
 .home__heroRight {
   display: flex;
   justify-content: center;
@@ -23,6 +35,35 @@
   height: 70vh;
   flex-wrap: wrap;
   padding: 4rem;
+}
+
+@media (max-width: 1000px) {
+  .home__heroLeft {
+    background-size: cover;
+    background-position: center center;
+  }
+  .home__heroRight {
+    width: 100vw;
+    height: 60vh;
+  }
+}
+
+@media (max-width: 700px) {
+  .home__hero {
+    width: 100vw;
+  }
+
+  .home__heroLeft {
+    position: absolute;
+    opacity: 0.3;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .home__heroRight {
+    position: relative;
+  }
 }
 
 .home_message {
