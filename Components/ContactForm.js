@@ -17,9 +17,6 @@ const ContactForm = () => {
       <ValidationError prefix="Email" field="email" errors={state.errors} />
       <input id="email" type="email" name="email" placeholder="email" />
       <ValidationError prefix="Email" field="email" errors={state.errors} />
-      <label className="py-2 text-grey-darkest" htmlFor="message">
-        How can we help?
-      </label>
       <textarea id="message" name="message" placeholder="How can we help?" />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
       <button type="submit" disabled={state.submitting}>
