@@ -1,0 +1,37 @@
+.home__hero {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home__heroLeft {
+  background: url("/hubert-gregg.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 41%;
+  background-position: 0 0;
+}
+
+.home__heroRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 50%;
+  height: 90vh;
+  flex-wrap: wrap;
+  padding: 4rem;
+}
+
+.home_message {
+  display: flex;
+  max-width: 600px;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.home_message_title {
+  font-size: 2rem;
+}
