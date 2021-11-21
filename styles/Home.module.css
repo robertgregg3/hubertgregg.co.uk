@@ -35,6 +35,7 @@
   height: 70vh;
   flex-wrap: wrap;
   padding: 4rem;
+  overflow: scroll;
 }
 
 @media (max-width: 1000px) {
