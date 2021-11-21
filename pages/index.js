@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Header from "./../components/Header";
+import Header from "./../Components/Header";
 import styles from "../styles/Home.module.css";
-import ContactForm from "../components/ContactForm";
+import ContactForm from "../Components/ContactForm";
 
 export default function Home() {
   return (
