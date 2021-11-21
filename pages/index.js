@@ -10,7 +10,7 @@ export default function Home() {
         <title>Hubert Gregg's Website</title>
         <meta
           name="Keywords"
-          content="Hubert Gregg - Author, Composer, Actor, Writer, Playwright"
+          content="Hubert Gregg - Author, Composer, Actor, Writer, Playwright."
         />
       </Head>
       <Header />
