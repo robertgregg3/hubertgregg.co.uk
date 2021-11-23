@@ -8,7 +8,7 @@
 .home__heroLeft {
   background: url("/hubert-gregg.jpeg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 41%;
   background-position: 0 0;
   margin: -0.2rem;
@@ -35,7 +35,6 @@
   height: 70vh;
   flex-wrap: wrap;
   padding: 4rem;
-  overflow: scroll;
 }
 
 @media (max-width: 1000px) {
@@ -44,6 +43,7 @@
     background-position: center center;
   }
   .home__heroRight {
+    overflow: scroll;
     width: 100vw;
     height: 60vh;
   }
