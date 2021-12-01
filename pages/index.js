@@ -12,6 +12,10 @@ export default function Home() {
           name="Keywords"
           content="Hubert Gregg - Author, Composer, Actor, Writer, Playwright."
         />
+        <meta
+          name="google-site-verification"
+          content="Ix7ZYTzNKw8oQMZs1Fm_O2q3pztSPnHUcN1zD3lKgz8"
+        />
       </Head>
       <Header />
       <div className={styles.home__hero}>
