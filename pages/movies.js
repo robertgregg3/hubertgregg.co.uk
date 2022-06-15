@@ -29,13 +29,10 @@ const Movies = () => {
     </>
   )
   return (
-    <>
      <Page 
       bgImage={styles.movies}
       heading="Doctor at Sea"
-      subHeading="starring Dirk Bogarde Brigitte Bardot and Hubert Gregg as Archer"
-      children={pageContent} />
-    </>
+      subHeading="starring Dirk Bogarde Brigitte Bardot and Hubert Gregg as Archer">{pageContent}</Page>
   )
 };
 

@@ -46,8 +46,9 @@ const Radio = () => {
       splitImage={true}
       heading="Thanks for the Memory..."
       subHeading="...hosted by Hubert Gregg for 35 years on BBC Radio 2"
-      firstItem={firstItem}
-      children={pageContent} />
+      firstItem={firstItem}>
+        {pageContent}
+      </PageSplitImage>
     </>
   )
 }

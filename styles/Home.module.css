@@ -106,6 +106,12 @@
   background-position: center center;
 }
 
+.contact-form {
+  display: flex;
+  place-content: center;
+  padding: 3rem;
+}
+
 .hero {
   margin: -0.2rem;
   height: 50vh;

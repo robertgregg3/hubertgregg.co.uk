@@ -11,12 +11,14 @@ const Page = ({ bgImage, heading, subHeading, children}) => {
             <Nav />
         </header>
         <main>
-            <div className={`${bgImage && `${bgImage} ${styles.hero}`}`}>
-                <div className={styles.hero__heading}>
-                    <h1 className={styles.page__heading}>{heading}</h1>
-                    <h5 className={styles.page__subHeading}>{subHeading}</h5>
+            {heading && subHeading &&
+                <div className={`${bgImage && `${bgImage} ${styles.hero}`}`}>
+                    <div className={styles.hero__heading}>
+                        <h1 className={styles.page__heading}>{heading}</h1>
+                        <h5 className={styles.page__subHeading}>{subHeading}</h5>
+                    </div>
                 </div>
-            </div>
+            }
             <div className={styles.main__content}>
                 {children}
             </div>

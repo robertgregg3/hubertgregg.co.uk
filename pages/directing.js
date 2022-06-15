@@ -44,13 +44,12 @@ const Directing = () => {
     </>
   )
   return (
-    <>
      <Page 
       bgImage={styles.directing}
       heading="Agatha Christie's ' The Mousetrap ' was"
-      subHeading="... very different until Hubert made some suggestions..."
-      children={pageContent} />
-    </>
+      subHeading="... very different until Hubert made some suggestions...">
+        {pageContent}
+      </Page>
   )
 };
 

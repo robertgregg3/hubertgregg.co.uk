@@ -43,15 +43,14 @@ const Radio = () => {
         </>
       )
   return  (
-    <>
      <PageSplitImage 
       bgImage={styles.music}
       splitImage={true}
       heading="Maybe it's Because"
       subHeading="I'm A Londoner"
-      firstItem={firstItem}
-      children={pageContent} />
-    </>
+      firstItem={firstItem}>
+        {pageContent}
+      </PageSplitImage>
   )
 }
 

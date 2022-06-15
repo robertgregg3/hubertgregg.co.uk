@@ -49,15 +49,14 @@ const Radio = () => {
         </>
       )
   return  (
-    <>
      <PageSplitImage 
       bgImage={styles.writing}
       splitImage={true}
       heading="How The Mousetrap"
       subHeading="became a decades long success story."
-      firstItem={firstItem}
-      children={pageContent} />
-    </>
+      firstItem={firstItem}>
+        {pageContent}
+      </PageSplitImage>
   )
 }
 

@@ -1,6 +1,8 @@
 import React from 'react'
 import PageSplitImage from "../Components/PageSplitImage";
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
+import Image from 'next/image'
+
 
 const Radio = () => {
     const firstItem = (
@@ -43,7 +45,7 @@ const Radio = () => {
                     <input type="hidden" name="cmd" value="_s-xclick" />
                     <input type="hidden" name="hosted_button_id" value="8G443HEVPVR2W" />
                     <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online." />
-                    <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
+                    <Image alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
                 </form>
         </section>
         </>
@@ -55,8 +57,9 @@ const Radio = () => {
       splitImage={true}
       heading="'Maybe it's Because'"
       subHeading="Hubert Gregg: 'A fascinating autobiograpy of His Life'"
-      firstItem={firstItem}
-      children={pageContent} />
+      firstItem={firstItem}>
+        {pageContent}
+      </PageSplitImage>
     </>
   )
 }

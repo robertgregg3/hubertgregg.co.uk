@@ -7,12 +7,11 @@ const About = () => {
     </>
   )
   return (
-    <>
      <Page 
       heading='About Hubert Gregg' 
-      subHeading='Learn more about this extrodinary man'
-      children={pageContent} />
-    </>
+      subHeading='Learn more about this extrodinary man'>
+        {pageContent}
+      </Page>    
   )
 };
 

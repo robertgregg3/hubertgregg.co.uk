@@ -48,8 +48,9 @@ const About = () => {
      <Page 
       bgImage={styles.home}
       heading="Thanks for the memories!"
-      subHeading="Learn about the singer/songwrite/actor/composer and more in the new autobiography"
-      children={pageContent} />
+      subHeading="Learn about the singer/songwrite/actor/composer and more in the new autobiography">
+        {pageContent}
+      </Page>
     </>
   )
 };

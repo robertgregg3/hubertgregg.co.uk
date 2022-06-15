@@ -1,41 +1,42 @@
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import navStyles from "../styles/Navbar.module.css";
 import Image from 'next/image'
+import { useRouter } from "next/dist/client/router";
 
 const Nav = () => {
-  const [ selected, setSelected ] = useState('selected');
+  const router = useRouter();
+
   return (
     <nav className={navStyles.nav}>
-      <Link href={'/'}>
+      <Link passHref href={'/'}>
           <Image 
             src="/hubert-gregg-nav.jpg"
             width="100"
-            height="100" />
+            height="100"
+            alt="Hubert Gregg navigation logo - click to go to home page" />
         </Link>    
       <ul>
         <li>
+          <Link passHref href={"/radio"}><a className={router.pathname === "/radio" ? "active" : ""}>Radio</a></Link>
         </li>
         <li>
-          <Link href={"/radio"}>Radio</Link>
+          <Link passHref href={"/movies"}><a className={router.pathname === "/movies" ? "active" : ""}>Movies</a></Link>
         </li>
         <li>
-          <Link href={"/movies"}>Movies</Link>
+          <Link passHref href={"/directing"}><a className={router.pathname === "/directing" ? "active" : ""}>directing</a></Link>
         </li>
         <li>
-          <Link href={"/directing"}>directing</Link>
+          <Link passHref href={"/writing"}><a className={router.pathname === "/writing" ? "active" : ""}>Writing</a></Link>
         </li>
         <li>
-          <Link href={"/writing"}>Writing</Link>
+          <Link passHref href={"/music"}><a className={router.pathname === "/music" ? "active" : ""}>Music</a></Link>
         </li>
         <li>
-          <Link href={"/music"}>Music</Link>
+          <Link passHref href={"/screenplay"}><a className={router.pathname === "/screenplay" ? "active" : ""}>Screenplay</a></Link>
         </li>
         <li>
-          <Link href={"/screenplay"}>Screenplay</Link>
-        </li>
-        <li>
-          <Link href={"/autobiography"}>Autobiography</Link>
+          <Link passHref href={"/autobiography"}><a className={router.pathname === "/autobiography" ? "active" : ""}>Autobiography</a></Link>
         </li>
       </ul>
     </nav>

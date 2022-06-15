@@ -44,15 +44,14 @@ const Radio = () => {
         </>
       )
   return  (
-    <>
      <PageSplitImage 
       bgImage={styles.screenplay}
       splitImage={true}
       heading="Three Men in a Boat,"
       subHeading="Jerome K Jerome, read by Hubert Gregg"
-      firstItem={firstItem}
-      children={pageContent} />
-    </>
+      firstItem={firstItem}>
+        {pageContent}
+      </PageSplitImage>
   )
 }
 
