@@ -1,0 +1,45 @@
+.footer {
+    background: url(/skyline.jpg);
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer ul {
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.footerContainer {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footerTitle {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+}
+
+.footerTitle::after {
+    content: '';
+    border-bottom: 1px solid #cccccc90;
+    width: 200px;
+    height: 1px;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+}
+
+.footer li {
+    font-size: 0.9rem;
+    margin-left: -2.5rem;
+}

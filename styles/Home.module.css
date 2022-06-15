@@ -5,6 +5,19 @@
   height: 100vh;
 }
 
+.hero__container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-gap: 2rem;
+  position: relative;
+  padding: 0 2.2rem;
+}
+
+.heroSplitImage {
+  margin: -0.2rem;
+  position: relative;
+}
+
 .home__heroLeft {
   background: url("/hubert-gregg.jpeg");
   background-repeat: no-repeat;
@@ -12,6 +25,114 @@
   width: 41%;
   background-position: 0 0;
   margin: -0.2rem;
+}
+
+.page__quote {
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.page__quote::before {
+  content: '';
+  border-left: 4px solid #333333;
+  margin-right: 2rem;
+  transform: rotate(3deg);
+  width: 100px;
+}
+
+.home {
+  background: url("/hubert-gregg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.radio {
+  background: url("/thanks-for-the-memory-radio-2-hubert-gregg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.screenplay {
+  background: url("/three-men-in-a-boat-jerome-k-jerome-read-by-hubert-gregg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.autobiography {
+  background: url("/maybe-its-because-hubert-gregg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.music {
+  background: url("/maybe-its-because-im-a-londoner-hubert-gregg-and-jack-warner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+}
+
+.music::after {
+  content: 'Hubert Gregg at the piano with Jack Warner';
+  position: absolute;
+  bottom: -25px;
+  font-size: 11px;
+  transform: skewX(-10deg);
+}
+
+
+.writing {
+  background: url("/agatha-christie-book.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.movies {
+  background: url("/hubert-gregg-and-dirk-bogarde-in-doctor-at-sea.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.directing {
+  background: url("/hubert_gregg_directing_the_hollow.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero {
+  margin: -0.2rem;
+  height: 50vh;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.hero__heading {
+  background-color: #00000070;
+  width: max-content;
+  padding: 5rem 10rem 2rem 3rem;
+  border-radius: 0 100% 0 0;
+  position: absolute;
+  bottom: 0
+}
+
+.page__heading,
+.page__subHeading {
+  text-shadow: 2px 3px 10px #000000;
+  color: #ffffff;
+}
+
+.main__content {
+  padding: 2rem;
 }
 
 @media (max-width: 1300px) {
@@ -42,6 +163,7 @@
     background-size: cover;
     background-position: center center;
   }
+
   .home__heroRight {
     overflow: scroll;
     width: 100vw;
