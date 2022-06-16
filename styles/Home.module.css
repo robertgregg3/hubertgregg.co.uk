@@ -48,7 +48,7 @@
 }
 
 .radio {
-  background: url("/thanks-for-the-memory-radio-2-hubert-gregg.jpg");
+  background: url("/hubert-gregg-thanks-for-he-memory-bbc-radio-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -93,17 +93,25 @@
 }
 
 .movies {
-  background: url("/hubert-gregg-and-dirk-bogarde-in-doctor-at-sea.jpg");
+  background: url("/films-hubert-gregg-as-prince-john.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .directing {
-  background: url("/hubert_gregg_directing_the_hollow.jpg");
+  background: url("/letter.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+.directing::after {
+  content: 'Letter to Hubert Gregg from Christie';
+  position: absolute;
+  bottom: -25px;
+  font-size: 11px;
+  transform: skewX(-10deg);
 }
 
 .contact-form {

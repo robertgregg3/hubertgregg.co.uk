@@ -9,6 +9,7 @@ const Nav = () => {
 
   return (
     <nav className={navStyles.nav}>
+    
       <Link passHref href={'/'}>
           <Image 
             src="/hubert-gregg-nav.jpg"

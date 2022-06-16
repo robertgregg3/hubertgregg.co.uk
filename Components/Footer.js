@@ -26,16 +26,16 @@ const Footer = () => {
                         <Link passHref href={"/radio"}><a className={router.pathname === "/radio" ? "footer-active" : ""}>Radio</a></Link>
                     </li>
                     <li>
-                        <Link passHref href={"/movies"}><a className={router.pathname === "/movies" ? "footer-active" : ""}>Movies</a></Link>
+                        <Link passHref href={"/music"}><a className={router.pathname === "/music" ? "footer-active" : ""}>Music</a></Link>
                     </li>
                     <li>
                         <Link passHref href={"/directing"}><a className={router.pathname === "/directing" ? "footer-active" : ""}>directing</a></Link>
                     </li>
                     <li>
                         <Link passHref href={"/writing"}><a className={router.pathname === "/writing" ? "footer-active" : ""}>Writing</a></Link>
-                        </li>
+                    </li>
                     <li>
-                        <Link passHref href={"/music"}><a className={router.pathname === "/music" ? "footer-active" : ""}>Music</a></Link>
+                        <Link passHref href={"/films"}><a className={router.pathname === "/films" ? "footer-active" : ""}>Films</a></Link>
                     </li>
                     <li>
                         <Link passHref href={"/screenplay"}><a className={router.pathname === "/screenplay" ? "footer-active" : ""}>Screenplay</a></Link>

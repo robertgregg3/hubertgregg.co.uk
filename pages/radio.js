@@ -6,9 +6,9 @@ const Radio = () => {
     const firstItem = (
         <>
         <h1>Thanks for the Memory on BBC Radio 2 with Hubert Gregg</h1>
-            <p className={styles.page__quote}><i>
+            <p className={styles.page__quote}><strong>Hubert Recalls:</strong> <i>
                 One Telephone call was all it took to start 35 years of presenting ' Thanks For The Memory ' for the BBC:
-            </i>
+                </i>
             </p>
             <section>
                 <p>
@@ -31,10 +31,10 @@ const Radio = () => {
                     As the years sped by I was able, under a number of different producers, to modify the content of the programmes. ' The Robin's Return ', played on a Victorian upright piano, no longer came out of the Archive Department as frequently; in fact it didn't come out at all. We substituted my old ' Square Deal ' theme, with ' Time Was '
                 </p>
                 <p>
-                    Phyllis had been producing ' Down Your Way ' very successfully for twenty-five years and was devastated to be told that she would now be producing me instead. Smarting as she was from her summary transfer, she has confessed to hating the sight of me when I walked into her office for the first time but this feeling lasted only until our discovery - a serendipity if ever there was one -that we had mountains in common; respect for professionalism, a liking for the best in popular words and music and the writers and performers of them; a refusal to suffer fools gladly [coupled with a firm belief that it was for these that rules - especially BBC. rules - were made]; and above all, laughter.
+                    Phyllis Robinson had been producing ' Down Your Way ' very successfully for twenty-five years and was devastated to be told that she would now be producing me instead. Smarting as she was from her summary transfer, she has confessed to hating the sight of me when I walked into her office for the first time but this feeling lasted only until our discovery - a serendipity if ever there was one -that we had mountains in common; respect for professionalism, a liking for the best in popular words and music and the writers and performers of them; a refusal to suffer fools gladly [coupled with a firm belief that it was for these that rules - especially BBC. rules - were made]; and above all, laughter.
                 </p>
                 <p>
-                    More details of Hubert's other compositions as well as his experiences Acting in Movies, and also directing for the stage can be found in his recently published Autobiography. Only available online through this website.
+                    More details of Hubert's other compositions as well as his experiences of acting in Movies, and also directing for the stage to follow...
                 </p>
           </section>
         </>
