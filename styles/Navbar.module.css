@@ -98,7 +98,7 @@
     }
 
     .open {
-        right: 150px !important;
+        right: 250px !important;
         transition: right 1s ease;
     }
 
