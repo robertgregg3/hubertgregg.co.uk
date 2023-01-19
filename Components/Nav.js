@@ -2,50 +2,8 @@ import React, { useState } from "react";
 import Link from "next/link";
 import navStyles from "../styles/Navbar.module.css";
 import Image from 'next/image'
-import { useRouter } from "next/dist/client/router";
-
-export const siteLinks = [
-  {
-    title: "Home",
-    url: "/",
-  },
-  {
-    title: "Radio",
-    url: "/radio",
-  },
-  {
-    title: "Music",
-    url: "/music",
-  },
-  {
-    title: "Directing",
-    url: "/directing",
-  },
-  {
-    title: "Writing",
-    url: "/writing",
-  },
-  {
-    title: "Films",
-    url: "/films",
-  },
-  {
-    title: "Screenplay",
-    url: "/screenplay",
-  },
-  {
-    title: "Autobiography",
-    url: "/autobiography",
-  },
-];
-
-const NavLink = ({ title, url }) => {
-  const router = useRouter();
-
-  return (
-    <Link passHref href={url}><a className={router.pathname === url ? "active" : ""}>{title}</a></Link>
-  )
-};
+import { siteLinks } from "../data/siteLinks";
+import NavLink from "./NavLinks";
 
 const Nav = () => {
   const [open, setIsOpen] = useState(false);
