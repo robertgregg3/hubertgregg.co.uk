@@ -1,45 +1,80 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import navStyles from "../styles/Navbar.module.css";
 import Image from 'next/image'
 import { useRouter } from "next/dist/client/router";
 
-const Nav = () => {
+export const siteLinks = [
+  {
+    title: "Home",
+    url: "/",
+  },
+  {
+    title: "Radio",
+    url: "/radio",
+  },
+  {
+    title: "Music",
+    url: "/music",
+  },
+  {
+    title: "Directing",
+    url: "/directing",
+  },
+  {
+    title: "Writing",
+    url: "/writing",
+  },
+  {
+    title: "Films",
+    url: "/films",
+  },
+  {
+    title: "Screenplay",
+    url: "/screenplay",
+  },
+  {
+    title: "Autobiography",
+    url: "/autobiography",
+  },
+];
+
+const NavLink = ({ title, url }) => {
   const router = useRouter();
 
   return (
-    <nav className={navStyles.nav}>
-      <Link passHref href={'/'}>
-          <Image 
-            src="/hubert-gregg-nav.jpg"
-            width="100"
-            height="100"
-            alt="Hubert Gregg navigation logo - click to go to home page" />
-        </Link>    
-      <ul>
-        <li>
-          <Link passHref href={"/radio"}><a className={router.pathname === "/radio" ? "active" : ""}>Radio</a></Link>
-        </li>
-        <li>
-          <Link passHref href={"/music"}><a className={router.pathname === "/music" ? "active" : ""}>Music</a></Link>
-        </li>
-        <li>
-          <Link passHref href={"/directing"}><a className={router.pathname === "/directing" ? "active" : ""}>directing</a></Link>
-        </li>
-        <li>
-          <Link passHref href={"/writing"}><a className={router.pathname === "/writing" ? "active" : ""}>Writing</a></Link>
-        </li>
-        <li>
-          <Link passHref href={"/films"}><a className={router.pathname === "/films" ? "active" : ""}>Films</a></Link>
-        </li>
-        <li>
-          <Link passHref href={"/screenplay"}><a className={router.pathname === "/screenplay" ? "active" : ""}>Screenplay</a></Link>
-        </li>
-        <li>
-          <Link passHref href={"/autobiography"}><a className={router.pathname === "/autobiography" ? "active" : ""}>Autobiography</a></Link>
-        </li>
-      </ul>
-    </nav>
+    <Link passHref href={url}><a className={router.pathname === url ? "active" : ""}>{title}</a></Link>
+  )
+};
+
+const Nav = () => {
+  const [open, setIsOpen] = useState(false);
+
+  return (
+    <>
+      <div className={navStyles.nav__toggle} onClick={() => setIsOpen(!open)}>
+          <span className={`${navStyles.nav__toggle__line} ${open ? navStyles.top__line : ''}`}></span>
+          <span className={`${navStyles.nav__toggle__line} ${open ? navStyles.middle__line : ''}`}></span>
+          <span className={`${navStyles.nav__toggle__line} ${open ? navStyles.bottom__line : ''}`}></span>
+      </div>  
+      <nav className={`${navStyles.nav} ${open ? navStyles.open : ''}`}>
+      
+        <Link passHref href={'/'}>
+            <Image 
+              src="/hubert-gregg-nav.jpg"
+              width="100"
+              height="100"
+              alt="Hubert Gregg navigation logo - click to go to home page" />
+          </Link>    
+        <ul>
+          {siteLinks.map(link => (
+            <li>
+              <NavLink title={link.title} url={link.url} />
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </>
   );
 };
 

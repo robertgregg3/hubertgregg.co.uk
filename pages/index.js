@@ -46,6 +46,7 @@ const About = () => {
           name="google-site-verification"
           content="Ix7ZYTzNKw8oQMZs1Fm_O2q3pztSPnHUcN1zD3lKgz8"
         />
+        <meta name="robots" content="all" />
       </Head>
      <Page 
       bgImage={styles.home}
