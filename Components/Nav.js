@@ -27,7 +27,7 @@ const Nav = () => {
         <ul>
           {siteLinks.map(link => (
             <li>
-              <NavLink title={link.title} url={link.url} />
+              <NavLink title={link.title} url={link.url} key={link.title} />
             </li>
           ))}
         </ul>
