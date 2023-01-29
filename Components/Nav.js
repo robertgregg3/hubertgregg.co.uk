@@ -15,7 +15,7 @@ const Nav = () => {
           <span className={`${navStyles.nav__toggle__line} ${open ? navStyles.middle__line : ''}`}></span>
           <span className={`${navStyles.nav__toggle__line} ${open ? navStyles.bottom__line : ''}`}></span>
       </div>  
-      <nav className={`${navStyles.nav} ${open ? navStyles.open : ''}`}>
+      <nav className={navStyles.nav}>
       
         <Link passHref href={'/'}>
             <Image 
@@ -24,7 +24,7 @@ const Nav = () => {
               height="100"
               alt="Hubert Gregg navigation logo - click to go to home page" />
           </Link>    
-        <ul>
+        <ul className={`${open ? navStyles.open : ''}`}>
           {siteLinks.map(link => (
             <li key={link.title}>
               <NavLink title={link.title} url={link.url}  />

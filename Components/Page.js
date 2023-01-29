@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from './Nav';
 import styles from '../styles/Home.module.css';
 import Footer from './Footer';
+import footerStyles from '../styles/Footer.module.css';
 
 
 const Page = ({ bgImage, heading, subHeading, children}) => {
@@ -23,7 +24,7 @@ const Page = ({ bgImage, heading, subHeading, children}) => {
                 {children}
             </div>
         </main>
-        <footer>
+        <footer className={footerStyles.footer}>
             <Footer />
         </footer>
     </>
