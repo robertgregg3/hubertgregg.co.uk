@@ -13,7 +13,7 @@ const Page = ({ bgImage, heading, subHeading, children}) => {
         </header>
         <main>
             {heading && subHeading &&
-                <div className={`${bgImage && `${bgImage} ${styles.hero}`}`}>
+                <div className={`${bgImage && `${bgImage} ${styles.hero} ${styles.hero__image}`}`}>
                     <div className={styles.hero__heading}>
                         <h1 className={styles.page__heading}>{heading}</h1>
                         <h5 className={styles.page__subHeading}>{subHeading}</h5>

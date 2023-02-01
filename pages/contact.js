@@ -5,7 +5,8 @@ import ContactForm from './../Components/ContactForm';
 const Movies = () => {
   const pageContent = (
     <>
-      <div className="contact-form">
+      <div className={styles.contact__form}>
+      <h1>Contact Us</h1>
         <ContactForm />
       </div>
     </>

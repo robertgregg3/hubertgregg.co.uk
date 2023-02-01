@@ -27,23 +27,15 @@
     border-radius: 5px;
 }
 
-
-@media(max-width:1100px) {
-    .nav {
-        grid-template-columns: 1fr;
-        grid-gap: 0;
-    }
-
-    .nav img {
-        display: none !important;
-    }
-}
-
 @media(max-width:1000px) {
     .open {
         right: 0% !important;
         transition: right 1s ease;
         -webkit-transition: right 0.5s ease;
+    }
+
+    .nav img {
+        display: none !important;
     }
 
     .nav ul {

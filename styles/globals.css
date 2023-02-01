@@ -29,6 +29,7 @@ header {
   justify-content: center;
   box-shadow: 1px 1px 14px 1px #cccccc70;
   position: fixed;
+  z-index: 1;
   background: #ffffff;
 }
 
@@ -36,8 +37,8 @@ main {
   margin: auto;
   max-width: 1200px;
   display: grid;
-  margin-top: 150px;
-  padding: 1rem;
+  margin-top: 135px;
+  padding: 0 1rem 1rem;
 }
 
 @media(max-width: 1000px) {
@@ -47,5 +48,6 @@ main {
 
   header {
     box-shadow: none;
+    background-color: transparent;
   }
 }

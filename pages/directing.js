@@ -1,5 +1,6 @@
 import PageSplitImage from "../Components/PageSplitImage";
 import styles from '../styles/Home.module.css'
+import Page from './../Components/Page';
 
 const Directing = () => {
   const firstItem = (
@@ -16,10 +17,12 @@ const Directing = () => {
     </>
   )
   return (
-    <PageSplitImage 
+    <Page 
       bgImage={styles.directing}
-      splitImage={true}
-      firstItem={firstItem} />
+      heading={' '}
+      subHeading="Agatha Christie’s ‘The Hollow’ Directed by Hubert Gregg">
+        {firstItem}
+      </Page>
   )
 };
 
