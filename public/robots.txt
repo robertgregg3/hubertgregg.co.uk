@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Disallow: /
+
+# Host
+Host: https://hubertgregg.co.uk
+
+# Sitemaps
+Sitemap: https://hubertgregg.co.uk/sitemap.xml
