@@ -1,6 +1,6 @@
 # *
 User-agent: *
-Disallow: /
+allow: /
 
 # Host
 Host: https://hubertgregg.co.uk
