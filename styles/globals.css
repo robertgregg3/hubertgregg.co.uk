@@ -20,7 +20,7 @@ a {
   min-height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-rows: 1fr 450px;
+  grid-template-rows: 1fr 530px;
 }
 
 header {
@@ -43,11 +43,10 @@ main {
 
 @media(max-width: 1000px) {
   main {
-    margin-top: 1rem;
+    margin-top: 9.5rem;
   }
 
   header {
-    box-shadow: none;
-    background-color: transparent;
+    height: 130px;
   }
 }
