@@ -44,7 +44,6 @@
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center !important;
-  width: 100vw;
 }
 
 .page__heading,
@@ -56,8 +55,7 @@
 
 .home {
   background: url("/hubert-gregg.jpeg");
-  min-height: 500px;
-  max-width: 1200px;
+  min-height: 650px;
 }
 
 .radio {
