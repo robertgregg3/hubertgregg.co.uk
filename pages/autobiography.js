@@ -26,6 +26,13 @@ const Radio = () => {
     const pageContent = (
         <>
            <section>
+                <br />
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="blank">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="8G443HEVPVR2W" />
+                    <input type="image" src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-150px.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online." />
+                    <Image alt="" border="0" src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-150px.png" width="1" height="1" />
+                </form>
                 <p>
                     His favourite stage part next to Hamlet was as Hugh Walford in the William Douglas Home comedy THE SECRETARY BIRD which he directed and played in, on a 40 week national tour. Film appearances included DOCTOR AT SEA (for which he wrote the score), THE MAGGIE, SIMON AND LAURA, IN WHICH WE SERVE, and as Prince John in Walt Disney's THE STORY OF ROBIN HOOD.
                 </p>
@@ -41,17 +48,21 @@ const Radio = () => {
                 <p>
                     More details of other compositions as well as his experiences Acting in Movies, on the stage and also directing for the stage can be found in his recently published Autobiography. Only available online through this website.
                 </p>
+                <br />
+                <br />
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="blank">
                     <input type="hidden" name="cmd" value="_s-xclick" />
                     <input type="hidden" name="hosted_button_id" value="8G443HEVPVR2W" />
                     <input type="image" src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-150px.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online." />
                     <Image alt="" border="0" src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-150px.png" width="1" height="1" />
                 </form>
+                <br />
+                <br />
         </section>
         </>
       )
-  return  (
-    <>
+      return  (
+          <>
      <PageSplitImage 
       bgImage={styles.autobiography}
       splitImage={true}

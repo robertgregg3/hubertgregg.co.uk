@@ -5,19 +5,21 @@ import styles from '../styles/Home.module.css'
 const Radio = () => {
     const firstItem = (
         <>
-        <h1>Thanks for the Memory on BBC Radio 2 with Hubert Gregg</h1>
-            <p className={styles.page__quote}><strong>Hubert Recalls:</strong> <i>
-                One Telephone call was all it took to start 35 years of presenting ' Thanks For The Memory ' for the BBC:
-                </i>
-            </p>
-            <section>
-                <p>
-                    The BBC. telephoned me with an offer. Ever since the astonishing acceptability to the public of ' A Square Deal ', which by now had run its seven-year course, one presenter after another had leapt onto the nostalgic band wagon for a season in the yesterday sun. I dare say I should have been flattered by this imitation but I couldn't see it in a generous light.
+            <div>
+                <h1>Thanks for the Memory on BBC Radio 2 with Hubert Gregg</h1>
+                <p className={styles.page__quote}><strong>Hubert Recalls:</strong> <i>
+                    One Telephone call was all it took to start 35 years of presenting ' Thanks For The Memory ' for the BBC:
+                    </i>
                 </p>
-                <p>
-                    One presenter, of a new series was an older associate named Gale Pedrick who was a free-lance researcher and broadcaster. His particular idea was to go farther back than I did on ' A Square Deal ', to Victorian memories, using Archive snippets that were attractive enough in themselves but to an audience older than I would wish for my own broadcasting. I cursed poor Gale at first but was full of remorse for this when I learned that, soon after the launch of his series, he had collapsed and died at the Tube Station at 0xford Circus. His producer, one Sheila Anderson, now approached me to take over.
-                </p>
-            </section>
+                <section>
+                    <p>
+                        The BBC. telephoned me with an offer. Ever since the astonishing acceptability to the public of ' A Square Deal ', which by now had run its seven-year course, one presenter after another had leapt onto the nostalgic band wagon for a season in the yesterday sun. I dare say I should have been flattered by this imitation but I couldn't see it in a generous light.
+                    </p>
+                    <p>
+                        One presenter, of a new series was an older associate named Gale Pedrick who was a free-lance researcher and broadcaster. His particular idea was to go farther back than I did on ' A Square Deal ', to Victorian memories, using Archive snippets that were attractive enough in themselves but to an audience older than I would wish for my own broadcasting. I cursed poor Gale at first but was full of remorse for this when I learned that, soon after the launch of his series, he had collapsed and died at the Tube Station at 0xford Circus. His producer, one Sheila Anderson, now approached me to take over.
+                    </p>
+                </section>
+            </div>
         </>
     )
 
