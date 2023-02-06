@@ -6,10 +6,6 @@ const About = () => {
   const pageContent = (
     <>
       <h1>Welcome to Hubert Gregg's website</h1>
-      <p className={styles.page__quote}><i>
-        Hubert Gregg started his showbusiness career early and began by acting in plays, here's how it all began:
-      </i>
-      </p>
       <section>
         <h3>Personal details:</h3>
         <p>
