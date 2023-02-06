@@ -28,7 +28,11 @@ export const siteLinks = [
       url: "/screenplay",
     },
     {
-      title: "Autobiography",
-      url: "/autobiography",
+      title: "Contact",
+      url: "/contact",
     },
+    // {
+    //   title: "Autobiography",
+    //   url: "/autobiography",
+    // },
   ];

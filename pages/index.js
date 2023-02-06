@@ -11,6 +11,28 @@ const About = () => {
       </i>
       </p>
       <section>
+        <h3>Personal details:</h3>
+        <p>
+          Born: 19th July 1914 <br />
+          Educated: St Dunstan's College and the Weber Douglas Academy of Dramatic Arts<br />
+        </p>
+        <h3>Marriages</h3>
+        <p>
+          Zoe Gail (daughter Stacey)<br />
+          Pat Kirkwood<br />
+          Carmel Lytton (1980 - one son Robert and one daughter Katherine)
+        </p>
+        <h3>Grandchildren</h3>
+        <p>
+          Luke Newton Mason <br />
+          Grace Carilyn Gregg<br />
+          Mia Rose James <br />
+          Mary James
+        </p>
+        <hr />
+      </section>
+      <section>
+        <h2>Huberts Career: How it all began</h2>
         <p>
           As a fourteen year old schoolboy Hubert played DUNOIS in George Bernard Shaw’s  ST. JOAN and HAMLET at the age of 18. Thereafter in his professional life Shakespeare and Shaw seemed to go very much hand in hand. In his autobiography he explains that it was while playing a range of Shakespeare parts at the Open Air Theatre in Regent's Park that he met Shaw for the first time when he created the role of The Black Prince in Shaw's one-act play THE SIX OF CALAIS. He recalled that nominally the play was directed by Robert Atkins but in fact, Shaw directed both the play and Atkins! It was, he says, an experience that stayed with him.
         </p>
